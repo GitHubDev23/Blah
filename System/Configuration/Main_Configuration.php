@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->System->Configuration->Main_Configuration.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -46,8 +46,8 @@
  ===========================
 */
 
-$_ACCESS_FILE		= "System/Configuration/Main_Access.php";
-$_CLASS_DATABASE		= "System/Configuration/Class_Database.php";
+$_ACCESS_FILE				= "System/Configuration/Main_Access.php";
+$_CLASS_DATABASE			= "System/Configuration/Class_Database.php";
 
 if (file_exists($_ACCESS_FILE)) {
 	include_once "$_ACCESS_FILE";
@@ -83,7 +83,7 @@ if (file_exists($_CLASS_DATABASE)) {
 
 $_INTERNAL_USER_MODULE			= "Application";
 $_INTERNAL_ADMINISTRATOR_MODULE		= "adminApplication";
-$_INTERNAL_CUSTOM_MODULE			= "customApplication";
+$_INTERNAL_CUSTOM_MODULE		= "customApplication";
 
 /*
  ===========================
@@ -95,7 +95,7 @@ $_INTERNAL_CUSTOM_MODULE			= "customApplication";
  ===========================
 */
 
-$_CERBERUS_FULL_VERSION			= "Cerberus Content Management System - Version: 4, Build: 0.6 ~ Wyn-Ghost - Friday, September, 13, 2019";
-$_CERBERUS_VERSION			= "4.0.6";
+$_CERBERUS_FULL_VERSION			= "Cerberus Content Management System - Version: 4, Build: 0.7 ~ Wynn-Ghost - Tuesday, June, 01, 2021";
+$_CERBERUS_VERSION			= "4.0.7";
 $_TINKESOFTWARE_SERVER			= "http://www.TinkeSoftware.com";
 ?>
