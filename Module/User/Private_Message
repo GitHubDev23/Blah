@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->Module->User->Private_Message
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -63,9 +63,9 @@ while ($_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array = $
 
 $_Module_Private_Message_LIST_PRIVATE_MESSAGE_ID				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['id'];
 $_Module_Private_Message_LIST_PRIVATE_MESSAGE_FROM				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_from'];
-$_Module_Private_Message_LIST_PRIVATE_MESSAGE_SUBJECT			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_subject'];
+$_Module_Private_Message_LIST_PRIVATE_MESSAGE_SUBJECT				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_subject'];
 $_Module_Private_Message_LIST_PRIVATE_MESSAGE_DATA				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_data'];
-$_Module_Private_Message_LIST_PRIVATE_MESSAGE_SENT_TIME			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_sent_time'];
+$_Module_Private_Message_LIST_PRIVATE_MESSAGE_SENT_TIME				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_Fetch_Array['private_message_sent_time'];
 
 /*
  ===========================
@@ -264,11 +264,11 @@ if ($DB->num_rows($_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTB
 
 while ($_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array = $DB->fetch_array($_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX)) {
 
-$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_ID			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['id'];
+$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_ID				= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['id'];
 $_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_FROM			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_from'];
-$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_SUBJECT		= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_subject'];
+$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_SUBJECT			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_subject'];
 $_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_DATA			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_data'];
-$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_SENT_TIME		= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_sent_time'];
+$_Module_Private_Message_LIST_OUTBOX_PRIVATE_MESSAGE_SENT_TIME			= $_Module_Private_Message_DB_Query_SELECT_PRIVATE_MESSAGES_OUTBOX_Fetch_Array['private_message_sent_time'];
 
 /*
  ===========================
