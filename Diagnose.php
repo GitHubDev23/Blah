@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->Diagnose.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -123,7 +123,7 @@ $_ARRAY_SYSTEM_FILES_CONFIGURATION_3			= "System/Configuration/Main_Configuratio
  ===========================
 */
 
-$_ARRAY_SYSTEM_FILES_LANGUAGES_0				= "System/Language/English/Language.cerb";
+$_ARRAY_SYSTEM_FILES_LANGUAGES_0			= "System/Language/English/Language.cerb";
 
 /*
  ===========================
@@ -166,10 +166,10 @@ $_ARRAY_SYSTEM_FILES_MODULES_ADMINISTRATOR_18		= "Module/Administration/Submissi
  ===========================
 */
 
-$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_0			= "index.php";
-$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_1			= "Module/Background/Log_Administration";
-$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_2			= "Module/Background/Log_Background";
-$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_3			= "Module/Background/Log_User";
+$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_0		= "index.php";
+$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_1		= "Module/Background/Log_Administration";
+$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_2		= "Module/Background/Log_Background";
+$_ARRAY_SYSTEM_FILES_MODULES_BACKGROUND_3		= "Module/Background/Log_User";
 
 /*
  ===========================
@@ -275,10 +275,10 @@ $_ARRAY_SYSTEM_FILES_ROOT_5_MD5				= md5_file($_ARRAY_SYSTEM_FILES_ROOT_5);
  ===========================
 */
 
-$_ARRAY_SYSTEM_FILES_CONFIGURATION_0_MD5			= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_0);
-$_ARRAY_SYSTEM_FILES_CONFIGURATION_1_MD5			= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_1);
-$_ARRAY_SYSTEM_FILES_CONFIGURATION_2_MD5			= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_2);
-$_ARRAY_SYSTEM_FILES_CONFIGURATION_3_MD5			= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_3);
+$_ARRAY_SYSTEM_FILES_CONFIGURATION_0_MD5		= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_0);
+$_ARRAY_SYSTEM_FILES_CONFIGURATION_1_MD5		= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_1);
+$_ARRAY_SYSTEM_FILES_CONFIGURATION_2_MD5		= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_2);
+$_ARRAY_SYSTEM_FILES_CONFIGURATION_3_MD5		= md5_file($_ARRAY_SYSTEM_FILES_CONFIGURATION_3);
 
 /*
  ===========================
