@@ -23,8 +23,9 @@
       `\<> |  | <>/'         |'|							   
         `-.|  |.-`           \ /							   
            '--'               ^					    TINKE SOFTWARE
-                  - 100% Free, Original, Clean and Quality Software Projects -
 
+							- 100% Free, Original, Clean and Quality Software Projects -
+              
 /*
  ============
  +
