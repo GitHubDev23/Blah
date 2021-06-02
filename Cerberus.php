@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->Cerberus.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -131,16 +131,16 @@ $_DB_Query_Main_Settings_Fetch_Array						= $DB->fetch_array($_DB_Query_Select_M
 */
 
 $_GLOBAL_SAFEHTML_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_directory'];
-$_GLOBAL_SAFEHTML_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_status'];
+$_GLOBAL_SAFEHTML_STATUS							= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_status'];
 $_GLOBAL_COOKIE_TIME								= $_DB_Query_Main_Settings_Fetch_Array['settings_cookie_time'];
 $_GLOBAL_GZIP_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_gzip_status'];
-$_GLOBAL_IMAGE_EXTENSION								= $_DB_Query_Main_Settings_Fetch_Array['settings_image_extension'];
+$_GLOBAL_IMAGE_EXTENSION							= $_DB_Query_Main_Settings_Fetch_Array['settings_image_extension'];
 $_GLOBAL_LANGUAGE_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_language_directory'];
 $_GLOBAL_OFFLINE_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_offline_status'];
 $_GLOBAL_SITE_TITLE								= $_DB_Query_Main_Settings_Fetch_Array['settings_site_title'];
 $_GLOBAL_SMILES_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_smiles_directory'];
-$_GLOBAL_SOUND_EXTENSION								= $_DB_Query_Main_Settings_Fetch_Array['settings_sound_extension'];
-$_GLOBAL_THEME_DIRECTORY								= $_DB_Query_Main_Settings_Fetch_Array['settings_theme_directory'];
+$_GLOBAL_SOUND_EXTENSION							= $_DB_Query_Main_Settings_Fetch_Array['settings_sound_extension'];
+$_GLOBAL_THEME_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_theme_directory'];
 $_GLOBAL_UPLOAD_SIZE_PRIVATE							= $_DB_Query_Main_Settings_Fetch_Array['settings_upload_size_private'];
 $_GLOBAL_UPLOAD_SIZE_PUBLIC							= $_DB_Query_Main_Settings_Fetch_Array['settings_upload_size_public'];
 $_GLOBAL_TEXT_EDITOR_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_text_editor_directory'];
@@ -155,7 +155,7 @@ $_GLOBAL_TEXT_EDITOR_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['set
 
 $_GLOBAL_USERNAME								= $_COOKIE['cerberus_username'];
 $_GLOBAL_PASSWORD								= $_COOKIE['cerberus_password'];
-$_GLOBAL_LANGUAGE_COOKIE								= $_COOKIE['cerberus_language'];
+$_GLOBAL_LANGUAGE_COOKIE							= $_COOKIE['cerberus_language'];
 
 /*
  ===========================
@@ -188,8 +188,8 @@ $_GLOBAL_MEMBER_ACCESS_LEVEL							= $_DB_Query_Member_Credentials_Fetch_Array['
 $_GLOBAL_MEMBER_AVATAR								= $_DB_Query_Member_Credentials_Fetch_Array['member_avatar'];
 $_GLOBAL_MEMBER_BANNED_STATUS							= $_DB_Query_Member_Credentials_Fetch_Array['member_banned_status'];
 $_GLOBAL_MEMBER_EMAIL_ADDRESS							= $_DB_Query_Member_Credentials_Fetch_Array['member_email_address'];
-$_GLOBAL_MEMBER_EXPERIENCE_AMOUNT							= $_DB_Query_Member_Credentials_Fetch_Array['member_experience_amount'];
-$_GLOBAL_MEMBER_LANGUAGE								= $_DB_Query_Member_Credentials_Fetch_Array['member_language'];
+$_GLOBAL_MEMBER_EXPERIENCE_AMOUNT						= $_DB_Query_Member_Credentials_Fetch_Array['member_experience_amount'];
+$_GLOBAL_MEMBER_LANGUAGE							= $_DB_Query_Member_Credentials_Fetch_Array['member_language'];
 $_GLOBAL_MEMBER_NUMBER_OF_POSTS							= $_DB_Query_Member_Credentials_Fetch_Array['member_number_of_posts'];
 $_GLOBAL_MEMBER_RANK								= $_DB_Query_Member_Credentials_Fetch_Array['member_rank'];
 $_GLOBAL_MEMBER_THEME								= $_DB_Query_Member_Credentials_Fetch_Array['member_theme'];
@@ -304,7 +304,7 @@ $DB_Query_Check_Login 								= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PRE
  ===========================
 */
 
-$DB_Query_Check_Login_Fetch_Array							= $DB->fetch_array($DB_Query_Check_Login);
+$DB_Query_Check_Login_Fetch_Array						= $DB->fetch_array($DB_Query_Check_Login);
 $DB_Query_Check_Login_Member_Username						= $DB_Query_Check_Login_Fetch_Array['member_username'];
 $DB_Query_Check_Login_Member_Password						= $DB_Query_Check_Login_Fetch_Array['member_password'];
 
@@ -531,7 +531,7 @@ if ($DB->num_rows($_DB_Query_Main_Banned_Status_Security_Check)) {
  ===========================
 */
 
-$_CHMOD_UPLOAD_DIRECTORY								= "Upload";
+$_CHMOD_UPLOAD_DIRECTORY							= "Upload";
 $_CHMOD_UPLOAD_DIRECTORY_VALUE							= "0777";
 $_OPEN_UPLOAD_DIRECTORY								= opendir($_CHMOD_UPLOAD_DIRECTORY);
 
@@ -568,7 +568,7 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
 
 if ($_GLOBAL_MEMBER_THEME != "") {
 
-$_GLOBAL_THEME_DIRECTORY								= "$_GLOBAL_MEMBER_THEME";
+$_GLOBAL_THEME_DIRECTORY							= "$_GLOBAL_MEMBER_THEME";
 
 } // [ + ] Theme Cookie Data Check
 
@@ -652,7 +652,7 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
  ===========================
 */
 
-$_DB_Query_Set_Member_Last_Post 							= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_last_post='$_GLOBAL_REFERRER' WHERE member_username='$_GLOBAL_USERNAME'");
+$_DB_Query_Set_Member_Last_Post 						= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_last_post='$_GLOBAL_REFERRER' WHERE member_username='$_GLOBAL_USERNAME'");
 
 /*
  ===========================
@@ -1011,9 +1011,9 @@ if ($_GLOBAL_GZIP_STATUS >= 1) {
  ===========================
 */
 
-$_MAIN_PAGE_GENERATION_START_TIME							= microtime();
+$_MAIN_PAGE_GENERATION_START_TIME						= microtime();
 $_MAIN_PAGE_GENERATION_START_ARRAY						= explode(" ", $_MAIN_PAGE_GENERATION_START_TIME);
-$_MAIN_PAGE_GENERATION_START_TIME							= $_MAIN_PAGE_GENERATION_START_ARRAY[1] + $_MAIN_PAGE_GENERATION_START_ARRAY[0];
+$_MAIN_PAGE_GENERATION_START_TIME						= $_MAIN_PAGE_GENERATION_START_ARRAY[1] + $_MAIN_PAGE_GENERATION_START_ARRAY[0];
 
 /*
  ===========================
@@ -1423,7 +1423,7 @@ $_DB_Query_Main_Blocks_Aligned_Right 						= $DB->query("SELECT * FROM {$_ACCESS
 while ($_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array = $DB->fetch_array($_DB_Query_Main_Blocks_Aligned_Right)) {
 
 $_MAIN_BLOCK_ALIGNED_RIGHT_FILE_NAME						= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_file_name'];
-$_MAIN_BLOCK_ALIGNED_RIGHT_TITLE							= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_title'];
+$_MAIN_BLOCK_ALIGNED_RIGHT_TITLE						= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_title'];
 
 echo ($_THIS_THEMES_BLOCKS_1);
 
@@ -1466,10 +1466,10 @@ echo ($_GLOBAL_LAYOUT_4);
 */
 
 $_MAIN_PAGE_GENERATION_END_TIME							= microtime();
-$_MAIN_PAGE_GENERATION_END_ARRAY							= explode(" ", $_MAIN_PAGE_GENERATION_END_TIME);
+$_MAIN_PAGE_GENERATION_END_ARRAY						= explode(" ", $_MAIN_PAGE_GENERATION_END_TIME);
 $_MAIN_PAGE_GENERATION_END_TIME							= $_MAIN_PAGE_GENERATION_END_ARRAY[1] + $_MAIN_PAGE_GENERATION_END_ARRAY[0];
-$_MAIN_PAGE_GENERATION_TOTAL_TIME							= $_MAIN_PAGE_GENERATION_END_TIME - $_MAIN_PAGE_GENERATION_START_TIME; 
-$_MAIN_PAGE_GENERATION_TOTAL_TIME							= round($_MAIN_PAGE_GENERATION_TOTAL_TIME,5);
+$_MAIN_PAGE_GENERATION_TOTAL_TIME						= $_MAIN_PAGE_GENERATION_END_TIME - $_MAIN_PAGE_GENERATION_START_TIME; 
+$_MAIN_PAGE_GENERATION_TOTAL_TIME						= round($_MAIN_PAGE_GENERATION_TOTAL_TIME,5);
 
 /*
  ===========================
