@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->RSS.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -141,16 +141,16 @@ while ($_DB_Query_SELECT_NEWS_Fetch_Array = $DB->fetch_array($_DB_Query_SELECT_N
 $_MAIN_RSS_LIST_NEWS_ID					= $_DB_Query_SELECT_NEWS_Fetch_Array['id'];
 $_MAIN_RSS_LIST_NEWS_AUTHOR				= $_DB_Query_SELECT_NEWS_Fetch_Array['news_author'];
 $_MAIN_RSS_LIST_NEWS_DATA				= $_DB_Query_SELECT_NEWS_Fetch_Array['news_data'];
-$_MAIN_RSS_LIST_NEWS_RFC					= $_DB_Query_SELECT_NEWS_Fetch_Array['news_rss_rfc'];
+$_MAIN_RSS_LIST_NEWS_RFC				= $_DB_Query_SELECT_NEWS_Fetch_Array['news_rss_rfc'];
 $_MAIN_RSS_LIST_NEWS_TITLE				= $_DB_Query_SELECT_NEWS_Fetch_Array['news_title'];
 
 $_MAIN_RSS_SYMBOL_REPLACE[0]				= "&";
 $_MAIN_RSS_SYMBOL_REPLACE[1]				= "<";
 $_MAIN_RSS_SYMBOL_REPLACE[2]				= "'";
 
-$_MAIN_RSS_SYMBOL_REPLACE_WITH[0]				= "&amp;";
-$_MAIN_RSS_SYMBOL_REPLACE_WITH[1]				= "&lt;";
-$_MAIN_RSS_SYMBOL_REPLACE_WITH[2]				= "&#39;";
+$_MAIN_RSS_SYMBOL_REPLACE_WITH[0]			= "&amp;";
+$_MAIN_RSS_SYMBOL_REPLACE_WITH[1]			= "&lt;";
+$_MAIN_RSS_SYMBOL_REPLACE_WITH[2]			= "&#39;";
 
 $_MAIN_RSS_LIST_NEWS_DATA				= str_replace($_MAIN_RSS_SYMBOL_REPLACE, $_MAIN_RSS_SYMBOL_REPLACE_WITH, $_MAIN_RSS_LIST_NEWS_DATA);
 
