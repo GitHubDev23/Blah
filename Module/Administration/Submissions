@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->Module->Administration->Submissions
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -56,8 +56,8 @@ if ($DB->num_rows($_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS) <= 0) {
 
 while ($_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array = $DB->fetch_array($_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS)) {
 
-$_Module_Submissions_LIST_SUBMISSION_ID				= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['id'];
-$_Module_Submissions_LIST_SUBMISSION_AUTHOR			= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['submission_author'];
+$_Module_Submissions_LIST_SUBMISSION_ID					= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['id'];
+$_Module_Submissions_LIST_SUBMISSION_AUTHOR				= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['submission_author'];
 $_Module_Submissions_LIST_SUBMISSION_DATA				= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['submission_data'];
 $_Module_Submissions_LIST_SUBMISSION_TIME				= $_Module_Submissions_SQL_Query_SELECT_SUBMISSIONS_Fetch_Array['submission_time'];
 
@@ -79,7 +79,7 @@ echo ("
 
 if ($_GET["DeleteID"] == "$_Module_Submissions_LIST_SUBMISSION_ID") {
 
-$_Module_Submissions_DB_Query_DELETE_SUBMISSION			= $DB->query("DELETE FROM {$_ACCESS_DATABASE_PREFIX}_news_submissions WHERE id='$_Module_Submissions_LIST_SUBMISSION_ID'");
+$_Module_Submissions_DB_Query_DELETE_SUBMISSION				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_PREFIX}_news_submissions WHERE id='$_Module_Submissions_LIST_SUBMISSION_ID'");
 
 if ($_Module_Submissions_DB_Query_DELETE_SUBMISSION) {
 													echo ($_Message_Submissions_SUBMISSION_DELETED_SUCCESSFULLY);
