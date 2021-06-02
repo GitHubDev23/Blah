@@ -21,7 +21,7 @@
  +
  + ---
  + - File Location: root->Install.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -31,8 +31,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wyn ~
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -107,7 +107,7 @@ $_INSTALL_FORM_POST_HOSTNAME_PASSWORD				= $_POST['post_sql_server_hostname_pass
 $_INSTALL_FORM_POST_HOSTNAME_DATABASE_NAME			= $_POST['post_sql_server_hostname_database_name'];
 $_INSTALL_FORM_POST_HOSTNAME_DATABASE_PREFIX			= $_POST['post_sql_server_database_prefix'];
 $_INSTALL_FORM_POST_CREATE_DATABASE				= $_POST['post_create_database'];
-$_INSTALL_FORM_POST_EMAIL_ADDRESS					= $_POST['post_email_address'];
+$_INSTALL_FORM_POST_EMAIL_ADDRESS				= $_POST['post_email_address'];
 $_INSTALL_FORM_POST_SECURE_URL					= $_POST['post_secure_url'];
 $_INSTALL_FORM_POST_CLEAR_URL					= $_POST['post_clear_url'];
 
@@ -250,7 +250,7 @@ $_ACCESS_FILE_DATA		= "<?PHP
 \$_ACCESS_DATABASE_HOSTNAME 		= \"$_INSTALL_FORM_POST_HOSTNAME\";
 \$_ACCESS_DATABASE_USERNAME 		= \"$_INSTALL_FORM_POST_HOSTNAME_USERNAME\";
 \$_ACCESS_DATABASE_PASSWORD 		= \"$_INSTALL_FORM_POST_HOSTNAME_PASSWORD\";
-\$_ACCESS_DATABASE_NAME 			= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_NAME\";
+\$_ACCESS_DATABASE_NAME 		= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_NAME\";
 \$_ACCESS_DATABASE_PREFIX 		= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_PREFIX\";
 \$_ACCESS_URL_CLEAR 			= \"$_INSTALL_FORM_POST_CLEAR_URL\";
 \$_ACCESS_URL_SECURE 			= \"$_INSTALL_FORM_POST_SECURE_URL\";
@@ -625,7 +625,7 @@ $_ACCESS_FILE_DATA		= "<?PHP
 \$_ACCESS_DATABASE_HOSTNAME 		= \"$_INSTALL_FORM_POST_HOSTNAME\";
 \$_ACCESS_DATABASE_USERNAME 		= \"$_INSTALL_FORM_POST_HOSTNAME_USERNAME\";
 \$_ACCESS_DATABASE_PASSWORD 		= \"$_INSTALL_FORM_POST_HOSTNAME_PASSWORD\";
-\$_ACCESS_DATABASE_NAME 			= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_NAME\";
+\$_ACCESS_DATABASE_NAME 		= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_NAME\";
 \$_ACCESS_DATABASE_PREFIX 		= \"$_INSTALL_FORM_POST_HOSTNAME_DATABASE_PREFIX\";
 \$_ACCESS_URL_CLEAR 			= \"$_INSTALL_FORM_POST_CLEAR_URL\";
 \$_ACCESS_URL_SECURE 			= \"$_INSTALL_FORM_POST_SECURE_URL\";
