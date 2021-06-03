@@ -20,7 +20,7 @@
  +
  + ---
  + - File Location: root->Theme->Cerberus->Theme.php
- + - File Version:  0.4 - Sunday, September, 08, 2019.
+ + - File Version:  0.5 - Tuesday, June, 01, 2021.
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
@@ -30,8 +30,8 @@
  +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
  +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
- +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%
- +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build 0.6
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
  ===========================================================================================
 */
 
@@ -164,11 +164,11 @@ $_GLOBAL_META_TAGS			= "
 		<Link REL=\"shortcut icon\" HREF=\"Theme/$_THEME_DIRECTORY/$_THEME_DIRECTORY_IMAGE/Icon/FavIcon.ico\" TYPE=\"image/x-icon\">
 		<META NAME=\"COPYRIGHT\" CONTENT=\"(C) Tinke Software\">
 		<META NAME=\"KEYWORDS\" CONTENT=\"Tinke Software, Tinke Byte, Content, Management, System, Cerberus, Apache, PHP, MySQL, SQL\">
-		<META NAME=\"DESCRIPTION\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.6 ~ Wyn ~\">
-		<META NAME=\"ROBOTS\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.6 ~ Wyn ~\">
+		<META NAME=\"DESCRIPTION\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.7 ~ Wynn ~\">
+		<META NAME=\"ROBOTS\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.7 ~ Wynn ~\">
 		<META NAME=\"REVISIT-AFTER\" CONTENT=\"1 DAYS\">
 		<META NAME=\"RATING\" CONTENT=\"GLOBAL\">
-		<META NAME=\"GENERATOR\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.6 ~ Wyn - Ghost\">
+		<META NAME=\"GENERATOR\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.7 ~ Wynn - Ghost\">
 ";
 
 /*
