@@ -62,7 +62,7 @@
  ===========================
 */
 
-$_Message_ERROR_ACTION_UNIVERSAL											= "<CENTER>Cerberus: I am sorry; I was not able to perform your request, please try once more.</CENTER>";
+$_Message_ERROR_ACTION_UNIVERSAL                                   = "<CENTER>Cerberus: I am sorry; I was not able to perform your request, please try once more.</CENTER>";
 
 /*
  ===========================
@@ -80,10 +80,10 @@ $_Message_ERROR_ACTION_UNIVERSAL											= "<CENTER>Cerberus: I am sorry; I wa
  ===========================
 */
 
-$_Message_Cerberus_APPLICATION_DEACTIVATED									= "<CENTER>Cerberus: This Application is deactivated.</CENTER>";
-$_Message_Cerberus_APPLICATION_NOT_FOUND									= "<CENTER>Cerberus: The requested Application could not be found.</CENTER>";
+$_Message_Cerberus_APPLICATION_DEACTIVATED									               = "<CENTER>Cerberus: This Application is deactivated.</CENTER>";
+$_Message_Cerberus_APPLICATION_NOT_FOUND									                 = "<CENTER>Cerberus: The requested Application could not be found.</CENTER>";
 $_Message_Cerberus_APPLICATION_ACCESS_RESTRICTED_ADMINISTRATOR				= "<CENTER>Cerberus: This Application is restricted to Members with Administration privileges.</CENTER>";
-$_Message_Cerberus_APPLICATION_ACCESS_RESTRICTED_MEMBER						= "<CENTER>Cerberus: This Application is restricted to Members.</CENTER>";
+$_Message_Cerberus_APPLICATION_ACCESS_RESTRICTED_MEMBER						     = "<CENTER>Cerberus: This Application is restricted to Members.</CENTER>";
 
 /*
  ===========================
@@ -91,8 +91,8 @@ $_Message_Cerberus_APPLICATION_ACCESS_RESTRICTED_MEMBER						= "<CENTER>Cerberus
  ===========================
 */
 
-$_Message_Cerberus_ERROR_SQL_RANK											= "Cerberus: There was an error, I was unable to update the Rank SQL Table.";
-$_Message_Cerberus_ERROR_SQL_MEMBER_LAST_POST								= "Cerberus: There was an error, I was unable to update the Member SQL Table.";
+$_Message_Cerberus_ERROR_SQL_RANK										                     	 = "Cerberus: There was an error, I was unable to update the Rank SQL Table.";
+$_Message_Cerberus_ERROR_SQL_MEMBER_LAST_POST								             = "Cerberus: There was an error, I was unable to update the Member SQL Table.";
 
 /*
  ===========================
@@ -100,7 +100,7 @@ $_Message_Cerberus_ERROR_SQL_MEMBER_LAST_POST								= "Cerberus: There was an e
  ===========================
 */
 
-$_Message_Cerberus_OFFLINE_MODE_ENABLED										= "Cerberus: OFFLINE MODE IS ENABLED; PLEASE DO NOT LOG-OUT WHILE THIS IS ON AND BE SURE TO DISABLE OFFLINE MODE WHEN YOU ARE FINISHED WORKING.";
+$_Message_Cerberus_OFFLINE_MODE_ENABLED										                 = "Cerberus: OFFLINE MODE IS ENABLED; PLEASE DO NOT LOG-OUT WHILE THIS IS ON AND BE SURE TO DISABLE OFFLINE MODE WHEN YOU ARE FINISHED WORKING.";
 
 /*
  ===========================
@@ -112,9 +112,9 @@ $_Message_Cerberus_OFFLINE_MODE_ENABLED										= "Cerberus: OFFLINE MODE IS EN
  ===========================
 */
 
-$_Message_Diagnose_DIAGNOSTICS_FINISHED										= "<BR><B>[ Done ]</B><BR><BR><B>If there are any missing files re-upload the file(s) immediately to bring Cerberus into proper operation.</B>";
-$_Message_Diagnose_EXAMINING_FILES											= "<B>Examining Core & System Files...</B>";
-$_Message_Diagnose_LISTING_FILES											= "<BR><BR><B>Listing Core & System Files...</B><BR><BR>";
+$_Message_Diagnose_DIAGNOSTICS_FINISHED									                = "<BR><B>[ Done ]</B><BR><BR><B>If there are any missing files re-upload the file(s) immediately to bring Cerberus into proper operation.</B>";
+$_Message_Diagnose_EXAMINING_FILES											                   = "<B>Examining Core & System Files...</B>";
+$_Message_Diagnose_LISTING_FILES										                     	= "<BR><BR><B>Listing Core & System Files...</B><BR><BR>";
 
 /*
  ============================================
@@ -154,13 +154,13 @@ $_Message_Diagnose_LISTING_FILES											= "<BR><BR><B>Listing Core & System F
  ===========================
 */
 
-$_Message_Administrators_UPDATE_WITHOUT_PASSWORD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Updated the Member Table ( Without Password ) Successfully.</CENTER><HR><BR>";
-$_Message_Administrators_UPDATE_WITHOUT_PASSWORD_ERROR						= "<BR><HR><CENTER>Cerberus: I was *NOT* able to Update the Member Table ( Without Password ).</CENTER><HR><BR>";
-$_Message_Administrators_UPDATE_WITH_PASSWORD_SUCCESSFUL					= "<BR><HR><CENTER>Cerberus: I have Updated the Member Table ( With Password ) Successfully.</CENTER><HR><BR>";
-$_Message_Administrators_UPDATE_WITH_PASSWORD_ERROR							= "<BR><HR><CENTER>Cerberus: I was *NOT* able to Update the Member Table ( With Password )</CENTER><HR><BR>";
-$_Message_Administrators_SEND_MESSAGE_LENGTH_ERROR							= "<HR><CENTER>Cerberus: Your Message is greater than 100 Characters. Please go back and reduce your Message Length.</CENTER><HR>";
-$_Message_Administrators_SEND_MESSAGE_SUCCESSFUL							= "<HR><CENTER>Cerberus: I have Sent your Message Successfully.</CENTER><HR>";
-$_Message_Administrators_SEND_MESSAGE_ERROR									= "<HR><CENTER>Cerberus: I am sorry, but there was an Error. Please try again.</CENTER><HR>";
+$_Message_Administrators_UPDATE_WITHOUT_PASSWORD_SUCCESSFUL				 = "<BR><HR><CENTER>Cerberus: I have Updated the Member Table ( Without Password ) Successfully.</CENTER><HR><BR>";
+$_Message_Administrators_UPDATE_WITHOUT_PASSWORD_ERROR						    = "<BR><HR><CENTER>Cerberus: I was *NOT* able to Update the Member Table ( Without Password ).</CENTER><HR><BR>";
+$_Message_Administrators_UPDATE_WITH_PASSWORD_SUCCESSFUL					   = "<BR><HR><CENTER>Cerberus: I have Updated the Member Table ( With Password ) Successfully.</CENTER><HR><BR>";
+$_Message_Administrators_UPDATE_WITH_PASSWORD_ERROR						      	= "<BR><HR><CENTER>Cerberus: I was *NOT* able to Update the Member Table ( With Password )</CENTER><HR><BR>";
+$_Message_Administrators_SEND_MESSAGE_LENGTH_ERROR							       = "<HR><CENTER>Cerberus: Your Message is greater than 100 Characters. Please go back and reduce your Message Length.</CENTER><HR>";
+$_Message_Administrators_SEND_MESSAGE_SUCCESSFUL						         	= "<HR><CENTER>Cerberus: I have Sent your Message Successfully.</CENTER><HR>";
+$_Message_Administrators_SEND_MESSAGE_ERROR								            	= "<HR><CENTER>Cerberus: I am sorry, but there was an Error. Please try again.</CENTER><HR>";
 
 /*
  ===========================
